@@ -1,0 +1,53 @@
+body {
+  background-color: #393e46;
+  font-color: #eeeeee;
+}
+
+.container {
+  position: relative;
+}
+
+.order-table {
+  margin-top: 150px;
+}
+
+.table-info td {
+  padding-right: 40px;
+  color: #eeeeee;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block {
+  text-align: center;
+  display: inline-block;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  padding: 50px 100px 50px 100px;
+  width: 300px;
+  height: 190px;
+  background: #222831;
+  border-radius: 70px;
+}
+
+.info-block h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #eeeeee;
+}
+
+.info-block p {
+  font-size: 30px;
+  font-weight: normal;
+  color: #eeeeee;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #eeeeee;
+}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+
+{% endblock %}
+
+{% block title %}
+<title>Customer Dashboard</title>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+
+  <div class="info-container">
+    <div class="info-block">
+      <h2>
+        {{pendingOrders}}
+      </h2>
+      <p>Pending Orders</p>
+    </div>
+
+    <div class="info-block">
+      <h2>
+        {{totalCustomers}}
+      </h2>
+      <p>Total Customers</p>
+    </div>
+    <div class="info-block">
+      <h2>
+        {{deliveredOrders}}
+
+      </h2>
+      <p>Orders Delivered</p>
+    </div>
+  </div>
+
+  <table class="order-table">
+    <tr>
+      <td>Product</td>
+      <td>Customer</td>
+      <td>Status</td>
+      <td>Update</td>
+      <td>Delete</td>
+      <td>View</td>
+    </tr>
+
+    {% for i in orders %}
+    <tr class="table-info">
+      <td>{{i.product.name}}</td>
+      <td>{{i.customer.name}}</td>
+      <td>{{i.status}}</td>
+      <td><a href="#">Update</a></td>
+      <td><a href="#">Delete</a></td>
+      <td><a href="#">View</a></td>
+
+    </tr>
+    {% endfor %}
+  </table>
+
+
+</div>
+
+
+
+{% endblock %}
