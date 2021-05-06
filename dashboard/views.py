@@ -12,8 +12,9 @@ def dashboard(request):
     orders = Order.objects.all()
     deliveredOrders = orders.filter(status="Delivered").count()
     pending = orders.filter(status='Pending').count()
-    totalCustomers = Customer.objects.all().count()
-    context = {"orders": orders, "deliveredOrders": deliveredOrders, "totalCustomers": totalCustomers ,"pendingOrders":pending}
+    totalOrders = orders.count()
+
+    context = {"orders": orders, "deliveredOrders": deliveredOrders, "totalOrders": totalOrders ,"pendingOrders":pending}
     return render(request, "dashboard.html", context)
 
 
