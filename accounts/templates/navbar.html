@@ -16,12 +16,13 @@
     {% if user.is_authenticated %}
 
 
+
     <li class="logout">
       <a href="{% url 'logout' %}">Log Out</a>
     </li>
 
     <li class="user-account">
-      <a href="{% url 'account' id=user.id %}">Hello {{user.username}}</a>
+      <a href="{% url 'account/{{user.id}}' %}">Hello {{user.username}}</a>
     </li>
 
 

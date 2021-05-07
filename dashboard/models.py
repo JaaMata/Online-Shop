@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -15,6 +16,7 @@ class Product(models.Model):
 
 
 class Customer(models.Model):
+    user = models.OneToOneField(User,null=True, on_delete=models.CASCADE)
     name = models.CharField(null=True, max_length=200)
 
     def __str__(self):
