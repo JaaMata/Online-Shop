@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: .25fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "filter products"
+    "filter products"
+    "product products"
+    "footer footer";
+  grid-gap: 10px;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+}
+
+.product {
+  background-color: blue;
+  grid-area: filter;
+}
+
+.filter {
+  background-color: green;
+  grid-area: products;
+}
+
+footer {
+  grid-area: footer;
+}
