@@ -79,18 +79,13 @@ a {
     grid-gap: 0.5rem;
   }
 
-  .order-table {
-    width: 90%;
-    margin-left: 5%;
-  }
-
   .order-table tr {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .table-info td {
     color: #eeeeee;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .info-container {
