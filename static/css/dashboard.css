@@ -79,6 +79,11 @@ a {
     grid-gap: 0.5rem;
   }
 
+  .order-table {
+    width: 90%;
+    margin-left: 5%;
+  }
+
   .order-table tr {
     font-size: 20px;
   }
@@ -100,7 +105,8 @@ a {
     display: block;
     background: #222831;
     border-radius: 70px;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     height: 5rem;
   }
 
